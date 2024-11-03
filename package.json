@@ -2,15 +2,29 @@
   "name": "automate-twitter-posts-with-ai",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node scr/index.js",
+    "dev": "nodemon src/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@google/generative-ai": "^0.3.1",
+    "@twitter-api-v2/plugin-rate-limit": "^1.1.0",
+    "cloudinary": "^2.5.1",
+    "cron": "^3.1.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "fs": "^0.0.1-security",
+    "google-auth-library": "^9.14.2",
+    "instagram-private-api": "^1.46.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.7",
+    "openai": "^4.70.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
     "twitter-api-v2": "^1.16.1"
   }
 }
